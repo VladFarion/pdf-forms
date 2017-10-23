@@ -28,7 +28,9 @@ module PdfForms
       end
 
       pdf_data << footer
-      return encode_data(pdf_data)
+      q = encode_data(pdf_data)
+      p q
+      q
     end
 
     alias_method :to_fdf, :to_pdf_data
